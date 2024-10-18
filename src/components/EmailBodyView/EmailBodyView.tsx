@@ -70,8 +70,8 @@ const EmailBodyView = ({email}: Props) => {
         <Avatar name={email.sender} />
       </div>
 
-      <div className="email-body__details">
-        <div className="email-body__header">
+      <section className="email-body__details">
+        <header className="email-body__header">
           <div>
             <h2 className="email-body__subject">{email.subject}</h2>
             <time 
@@ -83,12 +83,12 @@ const EmailBodyView = ({email}: Props) => {
           </div>
 
           <MarkFavorite emailId={email.id} />
-        </div>
+        </header>
         <div
           dangerouslySetInnerHTML={{ __html: emailContent?.body ?? "" }}
           className="email-body__content"
         />
-      </div>
+      </section>
     </article>
   )
 }

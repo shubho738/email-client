@@ -9,7 +9,7 @@ type Props = {
     const filterOptions: ('read' | 'unread' | 'favorites')[] = ['unread', 'read', 'favorites']
 
   return (
-    <div 
+    <nav 
       className="filter-emails"
       style={{display: "flex", gap: "1rem", alignItems: "center"}}
     >
@@ -32,7 +32,7 @@ type Props = {
         {option}
       </button>
       ))}
-    </div>
+    </nav>
   )
 }
 
