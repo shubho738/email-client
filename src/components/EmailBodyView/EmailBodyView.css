@@ -1,0 +1,31 @@
+
+.email-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8rem;
+  border: 1px solid var(--clr-border);
+  border-radius: .5rem;
+  padding-block: 1.2rem;
+  padding-inline: 1.2rem;
+}
+
+.email-body__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.email-body__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.email-body__subject {
+  font-size: var(--fs-600);
+  margin-block-end: 1rem;
+}
+
+.email-body__content p {
+  margin-bottom: 1.4rem;
+}

@@ -1,0 +1,42 @@
+
+.app {
+  display: grid;
+  height: 100vh;
+}
+
+.app--split {
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 400px 1fr; 
+  gap: 2rem;
+}
+
+
+.app__master-pane,
+.app__detail-pane {
+  grid-row: 2;
+}
+
+.app__master-pane {
+  margin-block-start: 2rem;
+  overflow-y: auto;
+  height: 100%;
+  scrollbar-width: none; /* Firefox */
+}
+
+.app--split .app__master-pane {
+  margin-top: 0;
+}
+
+.app__master-pane::-webkit-scrollbar {
+  display: none;
+}
+
+.app__detail-pane {
+  overflow-y: auto; 
+  height: 100%;
+  scrollbar-width: none; /* Firefox */
+}
+
+.app__detail-pane::-webkit-scrollbar {
+  display: none;
+}
